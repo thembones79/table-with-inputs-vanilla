@@ -1,0 +1,19 @@
+{
+  "name": "table-input-vanilla",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "be": "nodemon ./mock/index.mjs",
+    "start": "concurrently -p '[{name}]' -n 'BACKEND,FRONTEND' -c 'bgBlue.bold,bgMagenta.bold' \"npm run be\" 'vite'",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  }
+}

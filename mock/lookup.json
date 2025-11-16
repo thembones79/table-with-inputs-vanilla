@@ -1,0 +1,159 @@
+{
+  "responsibilityGroups": [
+    "CFAVF",
+    "CFPEN",
+    "CFRLO",
+    "CFRR",
+    "CFT",
+    "CFTLO",
+    "GBSAP",
+    "GBSAR",
+    "GBSCB",
+    "GBSCR",
+    "GBSPO",
+    ""
+  ],
+  "template": [
+    "Line Items",
+    "Balances",
+    ""
+  ],
+  "oneTwo": [
+    "One-Sided",
+    "Two-Sided"
+  ],
+  "virtualKey_glF": [
+    "accountItemName",
+    "abdulSuffix1",
+    "oneSided",
+    "abdulSuffix3"
+  ],
+  "level": [
+    "Company Code",
+    "Segment",
+    "Depth Structure"
+  ],
+  "dueDate": [
+    "U+01",
+    "U+02",
+    "U+03",
+    "U+04",
+    "U+05",
+    "U+15"
+  ],
+  "virtualKey_c2": [
+    "accountItemNameClearing_RevC",
+    "clearingSuffix1_RevC",
+    "clearingSuffix2_RevC",
+    "clearingSuffix3_RevC"
+  ],
+  "t880": [
+    "Yes",
+    "No"
+  ],
+  "virtualKey_cl": [
+    "accountItemNameClearing",
+    "clearingSuffix1",
+    "clearingSuffix2",
+    "clearingSuffix3"
+  ],
+  "virtualKey_ai2": [
+    "accountItemNameClearing",
+    "clearingSuffix1",
+    "clearingSuffix2",
+    "clearingSuffix3"
+  ],
+  "virtualKey_gl": [
+    "accountItemName",
+    "abdulSuffix1",
+    "oneSided",
+    "abdulSuffix3"
+  ],
+  "clearing": [
+    "A",
+    "S",
+    ""
+  ],
+  "virtualKey_ai": [
+    "accountItemName",
+    "abdulSuffix1",
+    "oneSided",
+    "abdulSuffix3"
+  ],
+  "frequency": [
+    "Monthly",
+    "Quarterly",
+    "Yearly"
+  ],
+  "yesNo": [
+    "Y",
+    "N"
+  ],
+  "recAcct": [
+    "D",
+    "K",
+    "GRIR"
+  ],
+  "keyNo": [
+    "Key",
+    "Non Key"
+  ],
+  "virtualKey_ai3": [
+    "accountItemNameClearing_RevC",
+    "clearingSuffix1_RevC",
+    "clearingSuffix2_RevC",
+    "clearingSuffix3_RevC"
+  ],
+  "freeText": [
+    "all"
+  ],
+  "inRowColumn": [
+    "bc00"
+  ],
+  "checkBox": [
+    "all"
+  ],
+  "risk": [
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "mappedKeyAccountDueDate": {
+    "source": "keyAccount",
+    "dict": {
+      "false": "U+8",
+      "true": "U+4"
+    }
+  },
+  "mappedRiskLevelPreparerRecon": {
+    "source": "riskLevel",
+    "dict": {
+      "Low": "y",
+      "Medium": "y",
+      "High": "y"
+    }
+  },
+  "mappedRiskLevelReviewerRecon": {
+    "source": "riskLevel",
+    "dict": {
+      "Low": "n",
+      "Medium": "n",
+      "High": "y"
+    }
+  },
+  "mappedRiskLevelApproverRecon": {
+    "source": "riskLevel",
+    "dict": {
+      "Low": "n",
+      "Medium": "y",
+      "High": "y"
+    }
+  },
+  "mappedInScopeSka1GlCodes": {
+    "source": "inScope",
+    "dict": {
+      "true": "blue",
+      "false": "pink"
+    }
+  }
+}

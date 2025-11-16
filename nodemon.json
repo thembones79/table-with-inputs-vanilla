@@ -1,0 +1,3 @@
+{
+  "ignore": ["changes.json", "README", "mock/changes.json", "*.json"]
+}

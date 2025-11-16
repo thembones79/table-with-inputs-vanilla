@@ -1,0 +1,1003 @@
+{
+  "gL_PC_PPC_TP_DC_LTxt_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_LTxt_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC_ABSLC": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC_ABSLC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_HTxt_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_HTxt_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_SDoc_SOI": {
+    "name": "GL_PC_PPC_TP_DC_SDoc_SOI",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "preparerClearing": {
+    "name": "Preparer",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai2:2"
+  },
+  "t880": {
+    "name": "T880 Mapping",
+    "description": "???",
+    "type": "checkbox",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "reviewerClearing_RevC": {
+    "name": "Reviewer",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai3:2"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "approverRecon": {
+    "name": "Approver",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_PCBlocked_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_PCBlocked_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "skb1LineItemDisplay": {
+    "name": "Line Item Display",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:1"
+  },
+  "gL_PC_PPC_TP_DC_PCBlocked": {
+    "name": "GL_PC_PPC_TP_DC_PCBlocked",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "approverClearing": {
+    "name": "Approver",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai2:2"
+  },
+  "gL_PC_PPC_TP_DC_Assig": {
+    "name": "GL_PC_PPC_TP_DC_Assig",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_Ref": {
+    "name": "GL_PC_PPC_TP_DC_Ref",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "skb1AccountCurrency": {
+    "name": "Account Currency",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "bc00": {
+    "name": "bc00",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "accountItemName": {
+    "name": "BC00 Cons Description",
+    "description": "???",
+    "type": "inRowColumn",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:2"
+  },
+  "ska1PostingBlock": {
+    "name": "Posting Block",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_Ref_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Ref_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "inScopeClearing_RevC": {
+    "name": "In Scope for Clearing",
+    "description": "???",
+    "type": "checkbox",
+    "filter": "freeText",
+    "visibility": "c2:2"
+  },
+  "skb1OpenItemManagement": {
+    "name": "Open Item Management",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "accountItemNameClearing_RevC": {
+    "name": "BC00 Cons Description",
+    "description": "???",
+    "type": "inRowColumn",
+    "filter": "freeText",
+    "visibility": "c2:2"
+  },
+  "clearingSuffix2_RevC": {
+    "name": "Suffix2",
+    "description": "???",
+    "type": "responsibilityGroups",
+    "filter": "freeText",
+    "visibility": "c2:2"
+  },
+  "approverClearing_RevC": {
+    "name": "Approver",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai3:2"
+  },
+  "accountItemClearing": {
+    "name": "Account Item",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "cl:1"
+  },
+  "clearingSuffix1_RevC": {
+    "name": "Suffix1",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "skb1PostAutomatically": {
+    "name": "Post Automatically",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "twoSidedSource": {
+    "name": "Two Sided Rec  2nd Data Source derived from",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:2"
+  },
+  "gL_PC_PPC_TP_DC_HTxt": {
+    "name": "GL_PC_PPC_TP_DC_HTxt",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC": {
+    "name": "GL_PC_PPC_TP_DC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_DC_ABSDC_ABSLC": {
+    "name": "GL_PC_DC_ABSDC_ABSLC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "skb1GlAccount": {
+    "name": "G/L Account",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "reconciliationLevel": {
+    "name": "Reconciliation Level",
+    "description": "???",
+    "type": "level",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "gL_DC_ABSDC_RevC": {
+    "name": "GL_DC_ABSDC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "ska1DelFi": {
+    "name": "DelFl",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:2"
+  },
+  "skb1HouseBank": {
+    "name": "House Bank",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_SDoc_SOI_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_SDoc_SOI_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_DC_ABSDC_RevC": {
+    "name": "GL_PC_DC_ABSDC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_DC_ABSDC_RevC_RevC": {
+    "name": "GL_PC_DC_ABSDC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_Ref_Cust_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Ref_Cust_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "accountItemClearing_RevC": {
+    "name": "Account Item",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1"
+  },
+  "accountItem": {
+    "name": "Account Item",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:1"
+  },
+  "gL_PC_PPC_TP_DC_Ref_Cust_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Ref_Cust_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "inScopeClearing": {
+    "name": "In Scope for Clearing",
+    "description": "???",
+    "type": "checkbox",
+    "filter": "freeText",
+    "visibility": "cl:2"
+  },
+  "gL_PC_PPC_TP_DC_Assig_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Assig_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "abdulSuffix3": {
+    "name": "Suffix3",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:2"
+  },
+  "gL_PC_DC_ABSDC_ABSLC_RevC": {
+    "name": "GL_PC_DC_ABSDC_ABSLC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_Assig_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Assig_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "dueDate": {
+    "name": "Reconciliation Due Date",
+    "description": "???",
+    "type": "mappedKeyAccountDueDate",
+    "filter": "freeText",
+    "visibility": "ai:1"
+  },
+  "ska1GlGroup": {
+    "name": "SAP Group Account Number",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_Ref_Cust": {
+    "name": "GL_PC_PPC_TP_DC_Ref_Cust",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "oneSided": {
+    "name": "One Sided / Two Sided Reconciliation Account",
+    "description": "???",
+    "type": "checkbox",
+    "filter": "freeText",
+    "visibility": "gl:2"
+  },
+  "skb1ReconciliationAccount": {
+    "name": "Reconciliation Account",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "accountItemNameClearing": {
+    "name": "BC00 Cons Description",
+    "description": "???",
+    "type": "inRowColumn",
+    "filter": "freeText",
+    "visibility": "cl:2"
+  },
+  "abdulSuffix1": {
+    "name": "Suffix1",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:2"
+  },
+  "frequency": {
+    "name": "Periodicity (Frequency)",
+    "description": "???",
+    "type": "frequency",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "gL_PC_PPC_TP_DC_SDoc_SOI_RevC": {
+    "name": "GL_PC_PPC_TP_DC_SDoc_SOI_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "skb1GlAccount2": {
+    "name": "G/L Account 2",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "0"
+  },
+  "gL_PC_PPC_TP_DC_Ref_Vend_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Ref_Vend_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_Ref_Vend_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Ref_Vend_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "accountGroupDescription": {
+    "name": "Account Group Description",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "accountType": {
+    "name": "Account Type",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:2;cl:2"
+  },
+  "skb1MarkedForDeletion": {
+    "name": "Marked For Deletion",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:2"
+  },
+  "yh010Group": {
+    "name": "Group Account",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:1"
+  },
+  "yh010GroupDescription": {
+    "name": "Group Account Description",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:1"
+  },
+  "clearingSuffix3": {
+    "name": "Suffix3",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "cl:2"
+  },
+  "reconType": {
+    "name": "Recon type",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "clearingSuffix2": {
+    "name": "Suffix2",
+    "description": "???",
+    "type": "responsibilityGroups",
+    "filter": "freeText",
+    "visibility": "cl:2"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_PCBlocked_RevC": {
+    "name": "GL_PC_PPC_TP_DC_PCBlocked_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "clearingSuffix1": {
+    "name": "Suffix1",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "cl:1"
+  },
+  "skb1PostingBlock": {
+    "name": "Posting Block 2",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "0"
+  },
+  "gL_PC_PPC_TP_DC_HTxt_RevC": {
+    "name": "GL_PC_PPC_TP_DC_HTxt_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "bc00Level": {
+    "name": "bc00Level",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "0"
+  },
+  "lineItemDisplay": {
+    "name": "Line Item Display",
+    "description": "???",
+    "type": "checkbox",
+    "filter": "freeText",
+    "visibility": "ai:2;gl:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "riskLevel": {
+    "name": "Risk Level",
+    "description": "???",
+    "type": "risk",
+    "filter": "freeText",
+    "visibility": "gl:1"
+  },
+  "accountCategory": {
+    "name": "Account Category",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "gl:1"
+  },
+  "gL_PC_PPC_TP_DC_LTxt": {
+    "name": "GL_PC_PPC_TP_DC_LTxt",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "skb1OpenItemManagementByLedgerGroup": {
+    "name": "Open Item Management By Ledger Group",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "inScope": {
+    "name": "In Scope for BSC?",
+    "description": "???",
+    "type": "checkbox",
+    "filter": "freeText",
+    "visibility": "gl:2"
+  },
+  "ska1HouseBank": {
+    "name": "House Bank",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "skb1LocalCurrencyOnly": {
+    "name": "Local Currency Only",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "0"
+  },
+  "gL_PC_PPC_TP_DC_Reversals": {
+    "name": "GL_PC_PPC_TP_DC_Reversals",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_Reversals_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Reversals_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_DC_ABSDC_ABSLC_RevC_RevC": {
+    "name": "GL_PC_DC_ABSDC_ABSLC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "reviewerClearing": {
+    "name": "Reviewer",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai2:2"
+  },
+  "gL_PC_PPC_TP_DC_LTxt_RevC": {
+    "name": "GL_PC_PPC_TP_DC_LTxt_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gl_DC_ABSDC_RevC": {
+    "name": "GL_DC_ABSDC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_Ref_Vend": {
+    "name": "GL_PC_PPC_TP_DC_Ref_Vend",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "skatGlDescription": {
+    "name": "SAP (Operating) GL Account Description",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "gL_DC_ABSDC": {
+    "name": "GL_DC_ABSDC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "reviewerRecon": {
+    "name": "Reviewer",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "keyAccount": {
+    "name": "Key / Non Key Accounts (based on time line)",
+    "description": "???",
+    "type": "checkbox",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "gL_PC_DC_ABSDC": {
+    "name": "GL_PC_DC_ABSDC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "preparerRecon": {
+    "name": "Preparer",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_SDoc_SOI",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "gL_PC_PPC_TP_DC_ABSDC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSDC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "ska1GlCode": {
+    "name": "SAP (Operating) GL Account Number",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "gl_DC_ABSDC_RevC_RevC": {
+    "name": "GL_DC_ABSDC_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "templateName": {
+    "name": "Template Name / Sub Process Chain",
+    "description": "???",
+    "type": "template",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "skb1AlternativeAccount": {
+    "name": "Alternative Account",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:1;cl:1;gl:1"
+  },
+  "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC": {
+    "name": "GL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:0;cl:2;gl:0;ai2:0;ai3:0"
+  },
+  "currencySplit": {
+    "name": "Additional Currency Split",
+    "description": "???",
+    "type": "checkbox",
+    "filter": "freeText",
+    "visibility": "ai:2"
+  },
+  "gL_PC_PPC_TP_DC_Ref_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Ref_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "clearingSuffix3_RevC": {
+    "name": "Suffix3",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "c2:2"
+  },
+  "gL_PC_PPC_TP_DC_Reversals_RevC_RevC": {
+    "name": "GL_PC_PPC_TP_DC_Reversals_RevC",
+    "description": "???",
+    "type": "clearing",
+    "filter": "freeText",
+    "visibility": "ai:0;c2:2;cl:0;gl:0;ai2:0;ai3:0"
+  },
+  "preparerClearing_RevC": {
+    "name": "Preparer",
+    "description": "???",
+    "type": "freeText",
+    "filter": "freeText",
+    "visibility": "ai3:2"
+  }
+}

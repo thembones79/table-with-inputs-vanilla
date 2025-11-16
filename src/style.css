@@ -1,0 +1,709 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 2px rgba(0, 153, 153, 0.2);
+}
+
+.result {
+  font-weight: bold;
+  color: #009999;
+}
+
+[inert] {
+  filter: opacity(0.4);
+}
+
+h2 {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.placeholder {
+  height: 30px;
+  padding-left: 20px;
+}
+
+.sync-info {
+  opacity: 1;
+  transition: 1s;
+  color: #009999;
+  font-size: small;
+  padding: 8px;
+  padding-top: 4px;
+  scale: 1;
+}
+
+.sync-info--hidden {
+  opacity: 0;
+}
+
+.diff-values {
+  border-color: red;
+  color: red;
+  background-color: #ffdaa2;
+  font-weight: bold;
+}
+/*
+tr:has(.diff-values) {
+  background-color: #ffc0cbb5;
+}
+
+body:has(.ai-box) > .header > #filter-rows {
+  display: none;
+}
+
+tbody > tr:hover {
+  background-color: #00999966;
+}
+
+tbody > tr:hover > td > input {
+  background-color: #00999933;
+}
+
+.highlighted {
+  filter: contrast(1.2) brightness(0.9) drop-shadow(0px 0px 0px #009999);
+  backdrop-filter: contrast(1.2) brightness(0.9) blur(15px)
+    drop-shadow(0px 0px 4px #009999);
+}
+
+.table-container {
+  overflow: auto;
+  max-width: 99%;
+  min-height: 300px;
+  max-height: calc(100vh - 170px);
+  position: relative;
+  scrollbar-width: thin;
+}
+
+thead th {
+  background-color: #dddddd;
+  position: sticky;
+  padding: 8px;
+  top: 0;
+  z-index: 13;
+}
+
+tr > td:first-child > input {
+  color: black;
+  font-weight: bold;
+}
+
+html {
+  -ms-scroll-chaining: none;
+  overscroll-behavior: contain;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead tr > th {
+  position: sticky;
+  padding: 0.5rem;
+  z-index: 2;
+  top: 0;
+}
+
+th {
+  vertical-align: top;
+}
+
+[type="search"] {
+  margin-bottom: 0.4rem;
+}
+
+thead tr > :first-child {
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+
+tbody tr > :first-child {
+  position: sticky;
+  z-index: 1;
+  left: 0;
+  filter: brightness(0.99) drop-shadow(0px 0px 0px #00000077);
+  background-color: #ffffff42;
+  backdrop-filter: blur(1px) contrast(2%) brightness(123.5);
+}
+
+tbody th {
+  position: sticky;
+  left: 0;
+}
+
+th {
+  font-size: 12px;
+  font-weight: 500;
+}
+*/
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  width: 90%;
+  z-index: 9;
+}
+/*
+input {
+  min-width: 200px;
+  height: 20px;
+  border: 1px solid #959495;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+input:disabled {
+  background-color: #80808026;
+  opacity: 0.7;
+}
+
+select {
+  height: 28px;
+  width: 100%;
+  min-width: max-content;
+  border: 1px solid #959495;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+label {
+  font-size: 12px;
+}
+*/
+.loader {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --primary-color: #009999;
+  --small-radius: 10px;
+  --form-control-color: rebeccapurple;
+  --form-control-disabled: #959495;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: var(--primary-color);
+  border-radius: var(--small-radius);
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: var(--primary-color);
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  border-radius: var(--small-radius);
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  border-radius: var(--small-radius);
+  top: 0;
+  content: "";
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+  border-radius: var(--small-radius);
+}
+.loader:after {
+  left: 1.5em;
+  border-radius: var(--small-radius);
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+@-webkit-keyframes topAnimation {
+  from {
+    transform: translate(0rem, 0);
+  }
+  to {
+    transform: translate(0rem, 3.5rem);
+  }
+}
+
+@keyframes topAnimation {
+  from {
+    transform: translate(0rem, 0);
+  }
+  to {
+    transform: translate(0rem, 3.5rem);
+  }
+}
+@-webkit-keyframes bottomAnimation {
+  from {
+    transform: translate(-11.5rem, 0);
+  }
+  to {
+    transform: translate(0rem, 0);
+  }
+}
+@keyframes bottomAnimation {
+  from {
+    transform: translate(-11.5rem, 0);
+  }
+  to {
+    transform: translate(0rem, 0);
+  }
+}
+button.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+  position: relative;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  color: #111111;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+}
+button.btn::after,
+button.btn::before {
+  border: 0;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
+  border-radius: 50%;
+}
+button.btn::before {
+  border: 0;
+  background-color: #009999;
+  top: -0.75rem;
+  left: 0.5rem;
+  -webkit-animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    0.25s infinite alternate;
+  animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s
+    infinite alternate;
+}
+button.btn::after {
+  background-color: #79af13;
+  top: 3rem;
+  left: 13rem;
+  -webkit-animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    0.5s infinite alternate;
+  animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s
+    infinite alternate;
+}
+button.btn:hover {
+  color: white;
+}
+button.btn:hover::before,
+button.btn:hover::after {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  -webkit-animation: none;
+  animation: none;
+}
+button.btn:hover::after {
+  left: 0rem;
+}
+button.btn:hover::before {
+  top: 0.5rem;
+  left: 0.35rem;
+}
+
+button.btn--hidden {
+  opacity: 0;
+  transition: opacity 0.6s 4s;
+  pointer-events: none;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"].diff-values {
+  border-color: red;
+  color: red;
+  background-color: #ffdaa2;
+  font-weight: bold;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+  transform-origin: bottom left;
+  transition: 1200ms transform ease-in-out;
+  background-color: #80808078;
+}
+
+input[type="checkbox"]:checked::before {
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  background-color: green;
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+  background-color: #80808026;
+  opacity: 0.7;
+}
+
+.tab-wrap {
+  -webkit-transition: 0.3s box-shadow ease;
+  transition: 0.3s box-shadow ease;
+  border-radius: 6px;
+  width: 99%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  background-color: #fff;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.tab-wrap:hover {
+  box-shadow:
+    0 12px 23px rgba(0, 0, 0, 0.23),
+    0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.tab {
+  display: none;
+}
+.tab:first-of-type:not(:last-of-type) + label {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tab:not(:first-of-type):not(:last-of-type) + label {
+  border-radius: 0;
+}
+.tab:last-of-type:not(:first-of-type) + label {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tab:checked + label {
+  background-color: #fff;
+  box-shadow: 0 -1px 0 #fff inset;
+  cursor: default;
+}
+.tab:checked + label:hover {
+  box-shadow: 0 -1px 0 #fff inset;
+  background-color: #fff;
+}
+.tab + label {
+  width: 100%;
+  box-shadow: 0 -1px 0 #eee inset;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
+  text-align: center;
+  background-color: #f2f2f2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  -webkit-transition:
+    0.3s background-color ease,
+    0.3s box-shadow ease;
+  transition:
+    0.3s background-color ease,
+    0.3s box-shadow ease;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.tab--inverted + label {
+  box-shadow: none;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.tab--inverted + label.group--changed {
+  color: red;
+}
+.tab--inverted:checked + label {
+  box-shadow: none;
+  background-color: #f2f2f2;
+}
+.tab--inverted:checked + label:hover {
+  box-shadow: none;
+  background-color: #f9f9f9;
+}
+.tab--inverted + label:hover {
+  box-shadow: none;
+}
+@media (min-width: 768px) {
+  .tab + label {
+    width: auto;
+  }
+}
+.tab + label:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 0 #f4f4f4 inset;
+}
+#toptabs-labels {
+  display: flex;
+  width: 100%;
+}
+.tab__content {
+  padding: 8px;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition:
+    0.5s opacity ease-in,
+    0.2s transform ease;
+  transition:
+    0.5s opacity ease-in,
+    0.2s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+
+.ai-box {
+  /* overflow: auto; */
+  max-height: calc(100vh - 170px);
+  position: relative;
+  display: flex;
+}
+
+.ai-box__left {
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.ai-box__right,
+.ai-box__center {
+  overflow: auto;
+  width: 100%;
+  scrollbar-width: thin;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+.form-item > label {
+  margin-top: 6px;
+}
+fieldset {
+  border-radius: 6px 6px 2px 6px;
+}
+
+.popover__item {
+  padding: 6px;
+  font-size: small;
+  border-radius: 6px;
+  background-color: #ffffff;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.popover__item:hover {
+  background-color: #00999933;
+  color: #009999;
+}
+
+.popover {
+  position: absolute;
+  transition: 0.9s all ease-in-out;
+  transform: scaleY(0);
+  padding: 0;
+  opacity: 0;
+  transform-origin: 0% 0%;
+  width: max-content;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  border-radius: 6px;
+  z-index: 9;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  filter: none;
+  backdrop-filter: none;
+}
+
+input:focus ~ .popover {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/* max-height - the only parameter in this file that needs to be edited.
+ * Change it to suit your needs. The rest is recommended to leave as is.
+ */
+.clusterize-scroll {
+  max-height: 200px;
+  overflow: auto;
+}
+
+/**
+ * Avoid vertical margins for extra tags
+ * Necessary for correct calculations when rows have nonzero vertical margins
+ */
+.clusterize-extra-row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* By default extra tag .clusterize-keep-parity added to keep parity of rows.
+ * Useful when used :nth-child(even/odd)
+ */
+.clusterize-extra-row.clusterize-keep-parity {
+  display: none;
+}
+
+/* During initialization clusterize adds tabindex to force the browser to keep focus
+ * on the scrolling list, see issue #11
+ * Outline removes default browser's borders for focused elements.
+ */
+.clusterize-content {
+  outline: 0;
+  counter-reset: clusterize-counter;
+}
+
+/* Centering message that appears when no data provided
+ */
+.clusterize-no-data td {
+  text-align: center;
+}

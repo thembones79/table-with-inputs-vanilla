@@ -1,0 +1,3299 @@
+[
+  {
+    "id": "glF",
+    "type": "tableF",
+    "label": "Approvers",
+    "columns": {
+      "abdulSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "dueDate": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1GlGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "t880": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "oneSided": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1ReconciliationAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "abdulSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverRecon": {
+        "visible": "y",
+        "changeable": "mappedRiskLevelApproverRecon"
+      },
+      "frequency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountGroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AccountCurrency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1MarkedForDeletion": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010Group": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010GroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reconType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00Level": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "lineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagement": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "riskLevel": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "accountCategory": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagementByLedgerGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScope": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LocalCurrencyOnly": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostAutomatically": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "twoSidedSource": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skatGlDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerRecon": {
+        "visible": "y",
+        "changeable": "mappedRiskLevelReviewerRecon"
+      },
+      "reconciliationLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "keyAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1DelFi": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerRecon": {
+        "visible": "y",
+        "changeable": "mappedRiskLevelPreparerRecon"
+      },
+      "ska1GlCode": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "templateName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AlternativeAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItem": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "currencySplit": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gl_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      }
+    }
+  },
+  {
+    "id": "gl",
+    "type": "table",
+    "label": "General Ledger",
+    "columns": {
+      "abdulSuffix3": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "dueDate": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1GlGroup": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "preparerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "t880": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "oneSided": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "reviewerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1ReconciliationAccount": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountItemNameClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "abdulSuffix1": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "approverRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelApproverRecon"
+      },
+      "frequency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LineItemDisplay": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountGroupDescription": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "approverClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AccountCurrency": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1MarkedForDeletion": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "yh010Group": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "yh010GroupDescription": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "bc00": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reconType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemName": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "ska1PostingBlock": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "clearingSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00Level": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "lineItemDisplay": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "inScopeClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagement": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "riskLevel": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountCategory": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountItemNameClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagementByLedgerGroup": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "approverClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScope": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "accountItemClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1HouseBank": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1LocalCurrencyOnly": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostAutomatically": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "twoSidedSource": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "reviewerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skatGlDescription": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1GlAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelReviewerRecon"
+      },
+      "reconciliationLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "keyAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1DelFi": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skb1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelPreparerRecon"
+      },
+      "ska1GlCode": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "templateName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AlternativeAccount": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountItemClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItem": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "currencySplit": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gl_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      }
+    }
+  },
+  {
+    "id": "ai",
+    "type": "group",
+    "label": "Account Items",
+    "columns": {
+      "abdulSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "dueDate": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "ska1GlGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "t880": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "oneSided": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1ReconciliationAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "abdulSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverRecon": {
+        "visible": "y",
+        "changeable": "mappedRiskLevelApproverRecon"
+      },
+      "frequency": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skb1GlAccount2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountGroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AccountCurrency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1MarkedForDeletion": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010Group": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010GroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reconType": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "clearingSuffix2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00Level": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "lineItemDisplay": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "inScopeClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagement": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "riskLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountCategory": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagementByLedgerGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScope": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LocalCurrencyOnly": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostAutomatically": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "twoSidedSource": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skatGlDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerRecon": {
+        "visible": "y",
+        "changeable": "mappedRiskLevelReviewerRecon"
+      },
+      "reconciliationLevel": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "keyAccount": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "ska1DelFi": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerRecon": {
+        "visible": "y",
+        "changeable": "mappedRiskLevelPreparerRecon"
+      },
+      "ska1GlCode": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "templateName": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skb1AlternativeAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItem": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "currencySplit": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "clearingSuffix3_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gl_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      }
+    }
+  },
+  {
+    "id": "cl",
+    "type": "table",
+    "label": "Clearing Doc Type Filter",
+    "columns": {
+      "abdulSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "dueDate": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1GlGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "t880": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "oneSided": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1ReconciliationAccount": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountItemNameClearing": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "abdulSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelApproverRecon"
+      },
+      "frequency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountGroupDescription": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "approverClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountType": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skb1AccountCurrency": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1MarkedForDeletion": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010Group": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010GroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "reconType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "accountItemName": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "ska1PostingBlock": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "clearingSuffix1": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00Level": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "lineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagement": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "riskLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountCategory": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagementByLedgerGroup": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "approverClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScope": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "ska1HouseBank": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1LocalCurrencyOnly": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostAutomatically": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "twoSidedSource": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skatGlDescription": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1GlAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelReviewerRecon"
+      },
+      "reconciliationLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "keyAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1DelFi": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelPreparerRecon"
+      },
+      "ska1GlCode": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "templateName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AlternativeAccount": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountItemClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItem": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "currencySplit": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "preparerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_LTxt": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Reversals_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_HTxt": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gl_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_DC_ABSDC_ABSLC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_DC_ABSDC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      }
+    }
+  },
+  {
+    "id": "ai3",
+    "type": "group",
+    "label": "Account Items Clearing RevC",
+    "columns": {
+      "abdulSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "dueDate": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1GlGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "t880": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "oneSided": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skb1ReconciliationAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "abdulSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelApproverRecon"
+      },
+      "frequency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountGroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AccountCurrency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1MarkedForDeletion": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010Group": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010GroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reconType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00Level": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "lineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagement": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "riskLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountCategory": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagementByLedgerGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverClearing_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "inScope": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LocalCurrencyOnly": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostAutomatically": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "twoSidedSource": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skatGlDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelReviewerRecon"
+      },
+      "reconciliationLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "keyAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1DelFi": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelPreparerRecon"
+      },
+      "ska1GlCode": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "templateName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AlternativeAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItem": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "currencySplit": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gl_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      }
+    }
+  },
+  {
+    "id": "ai2",
+    "type": "group",
+    "label": "Account Items Clearing",
+    "columns": {
+      "abdulSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "dueDate": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1GlGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "t880": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "oneSided": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1ReconciliationAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "abdulSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelApproverRecon"
+      },
+      "frequency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountGroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverClearing": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "accountType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AccountCurrency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1MarkedForDeletion": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010Group": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010GroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reconType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00Level": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "lineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagement": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "riskLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountCategory": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1OpenItemManagementByLedgerGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScope": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LocalCurrencyOnly": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostAutomatically": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "twoSidedSource": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skatGlDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelReviewerRecon"
+      },
+      "reconciliationLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "keyAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1DelFi": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelPreparerRecon"
+      },
+      "ska1GlCode": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "templateName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AlternativeAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItem": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "currencySplit": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gl_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      }
+    }
+  },
+  {
+    "id": "c2",
+    "type": "table",
+    "label": "Clearing Reversal Reason Code Filter",
+    "columns": {
+      "abdulSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "dueDate": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1GlGroup": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "t880": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "oneSided": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1ReconciliationAccount": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountItemNameClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "abdulSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "approverRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelApproverRecon"
+      },
+      "frequency": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1GlAccount2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1LineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountGroupDescription": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "approverClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountType": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skb1AccountCurrency": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1MarkedForDeletion": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010Group": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "yh010GroupDescription": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reconType": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemName": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "ska1PostingBlock": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "clearingSuffix1": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1PostingBlock": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "bc00Level": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "lineItemDisplay": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScopeClearing_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skb1OpenItemManagement": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "riskLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountCategory": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemNameClearing_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "clearingSuffix2_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "skb1OpenItemManagementByLedgerGroup": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "approverClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "inScope": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "accountItemClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1HouseBank": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1LocalCurrencyOnly": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix1_RevC": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1PostAutomatically": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "twoSidedSource": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skatGlDescription": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1GlAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "reviewerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelReviewerRecon"
+      },
+      "reconciliationLevel": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "keyAccount": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "ska1DelFi": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "skb1HouseBank": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerRecon": {
+        "visible": "n",
+        "changeable": "mappedRiskLevelPreparerRecon"
+      },
+      "ska1GlCode": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "templateName": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "skb1AlternativeAccount": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountItemClearing_RevC": {
+        "visible": "y",
+        "changeable": "n"
+      },
+      "accountItem": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "currencySplit": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "clearingSuffix3_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "inScopeClearing": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "preparerClearing_RevC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Assig_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_SDoc_SOI_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_PCBlocked_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_HTxt_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Ref_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Reversals": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_Reversals_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_ABSLC_ABSLC2_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Assig_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_HTxt": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_LTxt_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gl_DC_ABSDC_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Vend": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_DC_ABSDC_ABSLC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_HTxt_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_DC_ABSDC": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_LTxt_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_SDoc_SOI": {
+        "visible": "n",
+        "changeable": "n"
+      },
+      "gL_PC_PPC_TP_DC_ABSDC_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_DC_ABSDC_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Cust_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_ABSLC_ABSLC2_Ref_Cust_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      },
+      "gL_PC_PPC_TP_DC_Ref_Cust_RevC": {
+        "visible": "y",
+        "changeable": "y"
+      }
+    }
+  }
+]

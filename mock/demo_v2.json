@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "date": "2025-11-01",
+    "exercise": "Push-ups",
+    "reps": 30,
+    "duration_min": 5,
+    "achievement": "Bronze Chest",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  },
+  {
+    "id": 2,
+    "date": "2025-11-02",
+    "exercise": "Squats",
+    "reps": 50,
+    "duration_min": 7,
+    "achievement": "Leg Day Initiate",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  },
+  {
+    "id": 3,
+    "date": "2025-11-03",
+    "exercise": "Plank",
+    "reps": 1,
+    "duration_min": 3,
+    "achievement": "Core Starter",
+    "calories_burned": 0,
+    "heart_rate_avg": 2.5
+  },
+  {
+    "id": 4,
+    "date": "2025-11-04",
+    "exercise": "Jumping Jacks",
+    "reps": 100,
+    "duration_min": 10,
+    "achievement": "Cardio Rookie",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  },
+  {
+    "id": 5,
+    "date": "2025-11-05",
+    "exercise": "Burpees",
+    "reps": 20,
+    "duration_min": 6,
+    "achievement": "Beast Mode Lite",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  },
+  {
+    "id": 6,
+    "date": "2025-11-06",
+    "exercise": "Lunges",
+    "reps": 40,
+    "duration_min": 8,
+    "achievement": "Silver Legs",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  },
+  {
+    "id": 7,
+    "date": "2025-11-07",
+    "exercise": "Sit-ups",
+    "reps": 60,
+    "duration_min": 9,
+    "achievement": "Abs Apprentice",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  },
+  {
+    "id": 8,
+    "date": "2025-11-08",
+    "exercise": "Mountain Climbers",
+    "reps": 80,
+    "duration_min": 7,
+    "achievement": "Climber's Spirit",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  },
+  {
+    "id": 9,
+    "date": "2025-11-09",
+    "exercise": "High Knees",
+    "reps": 90,
+    "duration_min": 6,
+    "achievement": "Speed Starter",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  },
+  {
+    "id": 10,
+    "date": "2025-11-10",
+    "exercise": "Push-ups",
+    "reps": 40,
+    "duration_min": 6,
+    "achievement": "Silverback Gorilla",
+    "calories_burned": 0,
+    "heart_rate_avg": 0
+  }
+]
