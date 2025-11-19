@@ -3,6 +3,9 @@ import fs from "fs";
 import multer from "multer";
 import cors from "cors";
 const STATUS = 200;
+const decimal = ".";
+const locked = false;
+let payload = undefined;
 const data = () => {
   return {
     delta: JSON.parse(fs.readFileSync("./mock/changes.json", "utf-8")),
@@ -21,17 +24,21 @@ app.get("/gl", (req, res) => {
   if (req.query.get) {
     req.query.get === "perm"
       ? handlePermissions(req, res)
-      : res.status(STATUS).json(data()[req.query.get]);
-  } 
+      : res
+          .status(STATUS)
+          .json(applyPayloadToData(data()[req.query.get], payload));
+  }
 });
 app.post("/gl", multer().none(), (req, res) => {
   const content = req.body.json;
   try {
-    fs.writeFileSync("./mock/changes.json", content);
+    console.log(JSON.parse(content).payload);
+    payload = JSON.parse(content).payload;
+    // fs.writeFileSync("./mock/changes.json", content);
   } catch (error) {
     console.error(error);
   }
-  res.status(STATUS).json(req.body);
+  res.status(STATUS).json({ locked: false });
 });
 
 app.listen(port, () => {
@@ -67,3 +74,28 @@ const handlePermissions = (req, res) => {
     message: "Turlaj pyzy Kmieciu!!!",
   });
 };
+
+function applyPayloadToData(data, payloadString) {
+  if (!payloadString) return data;
+  const [header, ...rows] = payloadString.split("|");
+  const [col1, col2] = header.split(",");
+
+  if (col1 !== "calories_burned" || col2 !== "heart_rate_avg") {
+    throw new Error("Nieprawidłowy nagłówek payloadu");
+  }
+
+  if (rows.length !== data.length) {
+    throw new Error(
+      "Liczba wierszy w payloadzie nie zgadza się z długością danych",
+    );
+  }
+
+  return data.map((entry, index) => {
+    const [caloriesStr, heartRateStr] = rows[index].split(",");
+    return {
+      ...entry,
+      calories_burned: parseFloat(caloriesStr),
+      heart_rate_avg: parseFloat(heartRateStr),
+    };
+  });
+}

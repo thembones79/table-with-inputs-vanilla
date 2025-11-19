@@ -1,4 +1,4 @@
-import { getData, URL } from "./api";
+import { getData, postData, URL } from "./api";
 
 export type ExerciseEntry = {
   id: number;
@@ -49,6 +49,25 @@ function sanitizeInputLive(input: string): string {
   return sanitized;
 }
 
+export const onSave = async () => {
+  const btn = document.getElementById("save-btn");
+  if (!btn) return;
+  let res: any = {};
+  btn.innerText = "Saving...";
+  btn.classList.add("btn--hidden");
+  res =
+    store.payload &&
+    (await postData(`${URL}&save=true`, { payload: store.payload }));
+  console.log({ res });
+  btn.innerText = "Data was saved ✅";
+  if (res.error) {
+    btn.innerText = "Data was NOT saved ❌";
+    setTimeout(() => {
+      btn.innerText = "Save";
+      btn.classList.remove("btn--hidden");
+    }, 3000);
+  }
+};
 function createInitialPayload(data: ExerciseEntry[]) {
   const head = "calories_burned,heart_rate_avg|";
   const values = data
@@ -108,11 +127,11 @@ function handleInput() {
   });
 }
 
-function handleSave() {
-  document.getElementById("save-btn")?.addEventListener("click", () => {
+async function handleSave() {
+  document.getElementById("save-btn")?.addEventListener("click", async () => {
     updatePayload();
     console.log("Aktualny payload:", store.payload);
-    alert("Payload zapisany:\n" + store.payload);
+    await onSave();
   });
 }
 
@@ -151,7 +170,53 @@ function renderExerciseTable(data: ExerciseEntry[]): string {
       </tbody>
     </table>
     <button id="save-btn" style="margin-top: 1rem; padding: 0.5rem 1rem;">Save</button>
+<div id="modal-wrapper"></div>
   `;
+  return html;
+}
+
+function renderModal(message: string, type: "error" | "success") {
+  const html = `
+    <div className="modal__backdrop">
+      <div className="modal">
+        ${
+          type === "success"
+            ? ` <div className="check-container">
+            <div className="check-background">
+              <svg viewBox="0 0 65 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7 25L27.3077 44L58.5 7"
+                  stroke="white"
+                  strokeWidth="13"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div className="check-shadow"></div>
+          </div>
+        `
+            : ""
+        }
+
+        ${
+          type === "error"
+            ? ` <div className="error-container">
+            <div className="circle-border"></div>
+            <div className="circle">
+              <div className="error"></div>
+            </div>
+          </div>
+        `
+            : ""
+        }
+
+        <h2>${message}</h2>
+        <button className="magic-btn" >
+          OK
+        </button>
+      </div>
+    </div> `;
   return html;
 }
 
@@ -160,8 +225,10 @@ export const initApp = async () => {
   const app = document.getElementById("app") as HTMLDivElement;
   if (!store.data) return;
   app.outerHTML = renderExerciseTable(store.data);
+  const modal = document.getElementById("modal-wrapper") as HTMLDivElement;
+  modal.innerHTML = renderModal("Data was saved", "success");
   createInitialPayload(store.data);
   console.log("init payload", store.payload);
   handleInput();
-  handleSave();
+  await handleSave();
 };
