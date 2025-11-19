@@ -29,7 +29,7 @@ tr:hover {
   background-color: #f5f5f5;
 }
 
-input[type="number"] {
+input[type="text"] {
   width: 100%;
   padding: 6px 8px;
   border: 1px solid #ccc;
@@ -38,7 +38,7 @@ input[type="number"] {
   box-sizing: border-box;
 }
 
-input[type="number"]:focus {
+input[type="text"]:focus {
   outline: none;
   border-color: #6c63ff;
   box-shadow: 0 0 0 2px rgba(0, 153, 153, 0.2);
@@ -223,6 +223,22 @@ label {
   font-size: 12px;
 }
 */
+.loader__wrapper {
+  position: fixed;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #ffffffa3;
+  animation: fadein 1s;
+  backdrop-filter: blur(6px);
+  outline: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .loader {
   display: flex;
   flex-direction: column;
@@ -335,6 +351,14 @@ label {
   }
   to {
     transform: translate(0rem, 0);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 button.btn {
@@ -708,8 +732,30 @@ input:focus ~ .popover {
   text-align: center;
 }
 
-
-
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ebebeb;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0px 0px 0px white;
+}
+button:hover {
+  box-shadow: 0px 0px 10px #009688;
+}
+button.magic-btn {
+  height: 51px;
+  background-color: #009688;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  font-weight: bold;
+  min-width: 100px;
+}
 
 .modal {
   display: flex;
@@ -1044,6 +1090,6 @@ strong {
   padding: 10px;
 }
 
-.error-container{
+.error-container {
   scale: 1.6;
 }

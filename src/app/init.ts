@@ -54,20 +54,14 @@ export const onSave = async () => {
   if (!btn) return;
   let res: any = {};
   btn.innerText = "Saving...";
-  btn.classList.add("btn--hidden");
   res =
     store.payload &&
     (await postData(`${URL}&save=true`, { payload: store.payload }));
   console.log({ res });
-  btn.innerText = "Data was saved ✅";
-  if (res.error) {
-    btn.innerText = "Data was NOT saved ❌";
-    setTimeout(() => {
-      btn.innerText = "Save";
-      btn.classList.remove("btn--hidden");
-    }, 3000);
-  }
+  btn.innerText = "Save";
+  renderModal("Data was saved", "success");
 };
+
 function createInitialPayload(data: ExerciseEntry[]) {
   const head = "calories_burned,heart_rate_avg|";
   const values = data
@@ -169,20 +163,24 @@ function renderExerciseTable(data: ExerciseEntry[]): string {
           .join("")}
       </tbody>
     </table>
-    <button id="save-btn" style="margin-top: 1rem; padding: 0.5rem 1rem;">Save</button>
-<div id="modal-wrapper"></div>
+    <button class="magic-btn" id="save-btn" style="margin-top: 1rem; padding: 0.5rem 1rem;">Save</button>
+    <div id="modal-wrapper"></div>
+    <div id="loader-wrapper"></div>
+      <div class="loader__wrapper">
+        <div class="loader"></div>
+      </div>
   `;
   return html;
 }
 
 function renderModal(message: string, type: "error" | "success") {
   const html = `
-    <div className="modal__backdrop">
-      <div className="modal">
+    <div class="modal__backdrop">
+      <div class="modal">
         ${
           type === "success"
-            ? ` <div className="check-container">
-            <div className="check-background">
+            ? ` <div class="check-container">
+            <div class="check-background">
               <svg viewBox="0 0 65 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7 25L27.3077 44L58.5 7"
@@ -193,7 +191,7 @@ function renderModal(message: string, type: "error" | "success") {
                 ></path>
               </svg>
             </div>
-            <div className="check-shadow"></div>
+            <div class="check-shadow"></div>
           </div>
         `
             : ""
@@ -201,10 +199,10 @@ function renderModal(message: string, type: "error" | "success") {
 
         ${
           type === "error"
-            ? ` <div className="error-container">
-            <div className="circle-border"></div>
-            <div className="circle">
-              <div className="error"></div>
+            ? ` <div class="error-container">
+            <div class="circle-border"></div>
+            <div class="circle">
+              <div class="error"></div>
             </div>
           </div>
         `
@@ -212,12 +210,22 @@ function renderModal(message: string, type: "error" | "success") {
         }
 
         <h2>${message}</h2>
-        <button className="magic-btn" >
+        <button id="close-btn" class="magic-btn" >
           OK
         </button>
       </div>
     </div> `;
-  return html;
+  const modal = document.getElementById("modal-wrapper") as HTMLDivElement;
+  modal.innerHTML = html;
+  document.getElementById("close-btn")?.addEventListener("click", closeModal);
+}
+
+function closeModal() {
+  document
+    .getElementById("close-btn")
+    ?.removeEventListener("click", closeModal);
+  const modal = document.getElementById("modal-wrapper") as HTMLDivElement;
+  modal.innerHTML = "";
 }
 
 export const initApp = async () => {
@@ -225,8 +233,6 @@ export const initApp = async () => {
   const app = document.getElementById("app") as HTMLDivElement;
   if (!store.data) return;
   app.outerHTML = renderExerciseTable(store.data);
-  const modal = document.getElementById("modal-wrapper") as HTMLDivElement;
-  modal.innerHTML = renderModal("Data was saved", "success");
   createInitialPayload(store.data);
   console.log("init payload", store.payload);
   handleInput();

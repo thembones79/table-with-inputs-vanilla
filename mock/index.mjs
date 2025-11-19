@@ -3,22 +3,24 @@ import fs from "fs";
 import multer from "multer";
 import cors from "cors";
 const STATUS = 200;
+const DELAY_IN_SECONDS = 3;
 const decimal = ".";
 const locked = false;
 let payload = undefined;
 const data = () => {
   return {
-    delta: JSON.parse(fs.readFileSync("./mock/changes.json", "utf-8")),
-    glLookupFields: JSON.parse(fs.readFileSync("./mock/lookup.json", "utf-8")),
-    glTableConfig: JSON.parse(fs.readFileSync("./mock/tabs.json", "utf-8")),
-    glTableNames: JSON.parse(fs.readFileSync("./mock/types.json", "utf-8")),
     glTable: JSON.parse(fs.readFileSync("./mock/demo_v2.json", "utf-8")),
   };
 };
 const app = express();
 const port = 3000;
+
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
+app.use((req, res, next) => {
+  const delay = DELAY_IN_SECONDS * 1000;
+  setTimeout(() => next(), delay);
+});
 
 app.get("/gl", (req, res) => {
   if (req.query.get) {
@@ -38,7 +40,7 @@ app.post("/gl", multer().none(), (req, res) => {
   } catch (error) {
     console.error(error);
   }
-  res.status(STATUS).json({ locked: false });
+  res.status(STATUS).json({ locked });
 });
 
 app.listen(port, () => {
