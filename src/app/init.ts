@@ -241,7 +241,11 @@ function closeModal() {
 }
 
 export const initApp = async () => {
-  store.data = await getData(`${URL}&get=glTable`);
+  //@ts-ignore
+  const {data,locked,decimal} = await getData(`${URL}&get=glTable`);
+  store.data = data;
+  store.locked = locked;
+  store.decimal = decimal;
   const app = document.getElementById("app") as HTMLDivElement;
   if (!store.data) return renderModal("Uuups", "error");
   app.outerHTML = renderExerciseTable(store.data);

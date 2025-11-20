@@ -3,7 +3,7 @@ import fs from "fs";
 import multer from "multer";
 import cors from "cors";
 const STATUS = 200;
-const DELAY_IN_SECONDS = 3;
+const DELAY_IN_SECONDS = 0;
 const decimal = ".";
 const locked = false;
 let payload = undefined;
@@ -23,12 +23,15 @@ app.use((req, res, next) => {
 });
 
 app.get("/gl", (req, res) => {
+  const response = {
+    data: applyPayloadToData(data()[req.query.get], payload),
+    locked,
+    decimal,
+  };
   if (req.query.get) {
     req.query.get === "perm"
       ? handlePermissions(req, res)
-      : res
-          .status(STATUS)
-          .json(applyPayloadToData(data()[req.query.get], payload));
+      : res.status(STATUS).json(response);
   }
 });
 app.post("/gl", multer().none(), (req, res) => {
@@ -88,7 +91,7 @@ function applyPayloadToData(data, payloadString) {
 
   if (rows.length !== data.length) {
     throw new Error(
-      "Liczba wierszy w payloadzie nie zgadza się z długością danych",
+      "Liczba wierszy w payloadzie nie zgadza się z długością danych"
     );
   }
 
