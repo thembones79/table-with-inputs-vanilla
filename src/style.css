@@ -40,7 +40,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  border-color: #6c63ff;
+  border-color: #009999;
   box-shadow: 0 0 0 2px rgba(0, 153, 153, 0.2);
 }
 
@@ -1092,4 +1092,7 @@ strong {
 
 .error-container {
   scale: 1.6;
+}
+a {
+  color: #009999;
 }

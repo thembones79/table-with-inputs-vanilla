@@ -15,12 +15,14 @@ export type TStore = {
   data?: ExerciseEntry[];
   payload?: string;
   decimal: "." | ",";
+  locked: boolean;
 };
 
 export const store: TStore = {
   data: undefined,
   decimal: ",",
   payload: undefined,
+  locked: false,
 };
 
 const tableId = "exercise-table";
@@ -50,16 +52,16 @@ function sanitizeInputLive(input: string): string {
 }
 
 export const onSave = async () => {
-  const btn = document.getElementById("save-btn");
-  if (!btn) return;
   let res: any = {};
-  btn.innerText = "Saving...";
   res =
     store.payload &&
     (await postData(`${URL}&save=true`, { payload: store.payload }));
   console.log({ res });
-  btn.innerText = "Save";
-  renderModal("Data was saved", "success");
+  const { locked } = res;
+  if (locked === false) return renderModal("Data was saved", "success");
+  if (locked === undefined)
+    return renderModal("Data was not saved<br />Server error", "error");
+  if (locked === true) return renderModal("LOCKED!!!", "error");
 };
 
 function createInitialPayload(data: ExerciseEntry[]) {
@@ -164,13 +166,23 @@ function renderExerciseTable(data: ExerciseEntry[]): string {
       </tbody>
     </table>
     <button class="magic-btn" id="save-btn" style="margin-top: 1rem; padding: 0.5rem 1rem;">Save</button>
-    <div id="modal-wrapper"></div>
-    <div id="loader-wrapper"></div>
+  `;
+  return html;
+}
+
+export function renderLoader() {
+  const html = `
       <div class="loader__wrapper">
         <div class="loader"></div>
       </div>
-  `;
-  return html;
+`;
+  const loader = document.getElementById("loader-wrapper") as HTMLDivElement;
+  loader.innerHTML = html;
+}
+
+export function closeLoader() {
+  const loader = document.getElementById("loader-wrapper") as HTMLDivElement;
+  loader.innerHTML = "";
 }
 
 function renderModal(message: string, type: "error" | "success") {
@@ -231,10 +243,11 @@ function closeModal() {
 export const initApp = async () => {
   store.data = await getData(`${URL}&get=glTable`);
   const app = document.getElementById("app") as HTMLDivElement;
-  if (!store.data) return;
+  if (!store.data) return renderModal("Uuups", "error");
   app.outerHTML = renderExerciseTable(store.data);
   createInitialPayload(store.data);
   console.log("init payload", store.payload);
   handleInput();
   await handleSave();
+  if (store.locked) renderModal("LOK", "error");
 };

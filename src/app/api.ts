@@ -1,3 +1,4 @@
+import { renderLoader, closeLoader } from "./init";
 const host = document.querySelector("body")?.dataset?.url || null;
 export const params = window.location.search;
 //const pathname = window.location.pathname;
@@ -24,6 +25,7 @@ const removeError = () => {
 };
 
 export async function getData<T>(url: string) {
+  renderLoader();
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -38,9 +40,12 @@ export async function getData<T>(url: string) {
     // store.error = ERROR_MESSAGE;
     setError();
     console.error(error.message);
+  } finally {
+    closeLoader();
   }
 }
 export async function postData(url: string, body: Record<string, any>) {
+  renderLoader();
   const formData = new FormData();
   formData.append("json", JSON.stringify(body));
   try {
@@ -61,5 +66,7 @@ export async function postData(url: string, body: Record<string, any>) {
     setError();
     console.error(error.message);
     return { error };
+  } finally {
+    closeLoader();
   }
 }
