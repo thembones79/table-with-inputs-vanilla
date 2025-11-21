@@ -12,14 +12,14 @@ export type ExerciseEntry = {
 };
 
 export type TStore = {
-  data?: ExerciseEntry[];
+  data: ExerciseEntry[];
   payload?: string;
   decimal: "." | ",";
   locked: boolean;
 };
 
 export const store: TStore = {
-  data: undefined,
+  data: [],
   decimal: ",",
   payload: undefined,
   locked: false,
@@ -56,12 +56,16 @@ export const onSave = async () => {
   res =
     store.payload &&
     (await postData(`${URL}&save=true`, { payload: store.payload }));
-  console.log({ res });
+
   const { locked } = res;
-  if (locked === false) return renderModal("Data was saved", "success");
-  if (locked === undefined)
+  if (locked === undefined) {
     return renderModal("Data was not saved<br />Server error", "error");
-  if (locked === true) return renderModal("LOCKED!!!", "error");
+  }
+
+  handleLocked(locked);
+  if (locked === false) {
+    renderModal("Data was saved", "success");
+  }
 };
 
 function createInitialPayload(data: ExerciseEntry[]) {
@@ -131,8 +135,23 @@ async function handleSave() {
   });
 }
 
+function handleLocked(locked?: boolean) {
+  const theApp = document.getElementById("the-app");
+  const saveBtn = document.getElementById("save-btn");
+  if (!theApp || !saveBtn) return;
+  if (locked) {
+    theApp.setAttribute("inert", "true");
+    saveBtn.innerText = "App is locked";
+    renderModal("LOK", "error");
+  } else {
+    theApp.removeAttribute("inert");
+    saveBtn.innerText = "Save";
+  }
+}
+
 function renderExerciseTable(data: ExerciseEntry[]): string {
   const html = `
+<div id="the-app">
     <table id="${tableId}" border="1" cellpadding="5" cellspacing="0">
       <thead>
         <tr>
@@ -166,6 +185,7 @@ function renderExerciseTable(data: ExerciseEntry[]): string {
       </tbody>
     </table>
     <button class="magic-btn" id="save-btn" style="margin-top: 1rem; padding: 0.5rem 1rem;">Save</button>
+</div>
   `;
   return html;
 }
@@ -242,16 +262,17 @@ function closeModal() {
 
 export const initApp = async () => {
   //@ts-ignore
-  const {data,locked,decimal} = await getData(`${URL}&get=glTable`);
+  const response: TStore = await getData(`${URL}&get=glTable`);
+  if (!response) return renderModal("Uuups", "error");
+  const { data, locked, decimal } = response;
   store.data = data;
-  store.locked = locked;
   store.decimal = decimal;
   const app = document.getElementById("app") as HTMLDivElement;
-  if (!store.data) return renderModal("Uuups", "error");
+  console.log({ data, decimal, locked, sd: store.data });
   app.outerHTML = renderExerciseTable(store.data);
   createInitialPayload(store.data);
   console.log("init payload", store.payload);
   handleInput();
   await handleSave();
-  if (store.locked) renderModal("LOK", "error");
+  handleLocked(locked);
 };
