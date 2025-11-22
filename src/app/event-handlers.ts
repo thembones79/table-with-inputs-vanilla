@@ -1,157 +1,68 @@
-import { store, type TChanges, type TRow } from "./store";
-import { getData, postData, URL } from "./api";
-import { renderAiTab, renderTableTab, updateRightContent } from "./renderers";
+import { store } from "./store";
+import { postData } from "./api";
+import { renderModal, handleLocked } from "./renderers";
 import {
-  updateRows,
-  handleInheritedChanges,
-  addChange,
-  removeChange,
+  parseDecimal,
+  formatDecimal,
+  sanitizeInputLive,
+  updatePayload,
 } from "./data-transformers";
 
-export const updateTab = async (tabId: string) => {
-  store.activeTab = tabId;
-  const tabType = store.tabs
-    ? store.tabs.find((t) => t.id === tabId)?.type
-    : "";
-  store.ingridients = store.lookup
-    ? store.lookup[`virtualKey_${tabId}` as keyof typeof store.ingridients]
-    : [];
-  store.multiFilteredRowData = undefined;
-  if (tabType === "group") return renderAiTab();
-  return await renderTableTab();
-};
+const host = document.querySelector("body")?.dataset?.url || null;
+export const params = window.location.search;
+export const URL = host ? host + params : window.location.href;
 
-export const onChangeGroup = (self: HTMLInputElement) =>
-  updateRightContent(self.value);
-
-export const onOptionClick = (id: string, val: string) => {
-  const input = document.getElementById(id) as HTMLInputElement;
-  if (input.value === val) return;
-  input.value = val;
-  //@ts-ignore
-  input.onchange();
-};
-
-export async function onChange(
-  self: HTMLInputElement,
-  theKey: string,
-  col: string,
-) {
-  store.changes = await getData(`${URL}&get=delta`);
-  const { placeholder, value, classList } = self;
-  if (placeholder === value) {
-    classList.remove("diff-values");
-    removeChange(theKey, col);
-  } else {
-    classList.add("diff-values");
-    addChange(theKey, col, value);
-  }
-  handleInheritedChanges({ col, theKey });
-  updateRows(false);
-}
-
-export async function onChangeFilters() {
-  if (!store.data) return;
-
-  const notEmptyInputs = Array.from(
-    document.querySelectorAll("[type='search']"),
-    //@ts-ignore
-  ).filter((i) => i.value !== "");
-
-  const columnIds = notEmptyInputs.map((i) => i.id.split("_")[1]);
-
-  store.multiFilteredRowData = store.data.filter((row) => {
-    const condition = (columnId: string) => {
-      const searchInput = document.querySelector(
-        `#id_${columnId}`,
-      ) as HTMLInputElement;
-      const phrase = searchInput ? searchInput.value.toLowerCase() : "";
-
-      return `${row[columnId as keyof TRow]}`.toLowerCase().startsWith(phrase);
-    };
-
-    return columnIds.every(condition);
-  });
-  updateRows(false);
-}
-
-export async function onChangeSelect(
-  self: HTMLInputElement,
-  theKey: string,
-  col: string,
-) {
-  store.changes = await getData(`${URL}&get=delta`);
-  const { title, value, classList } = self;
-  if (title === value) {
-    classList.remove("diff-values");
-    removeChange(theKey, col);
-  } else {
-    classList.add("diff-values");
-    addChange(theKey, col, value);
-  }
-  handleInheritedChanges({ col, theKey });
-  updateRows(false);
-}
-
-export async function onChangeCheckbox(
-  self: HTMLInputElement,
-  theKey: string,
-  col: string,
-) {
-  getData(`${URL}&get=delta`).then((dc) => {
-    store.changes = dc as TChanges;
-
-    const { checked, classList, title } = self;
-    if (title === `${checked}`) {
-      classList.remove("diff-values");
-      removeChange(theKey, col);
-    } else {
-      classList.add("diff-values");
-      addChange(theKey, col, checked);
-    }
-    handleInheritedChanges({ col, theKey });
-    updateRows(false);
-  });
-}
-
-export const onSave = async (btn: HTMLButtonElement) => {
+export const onSave = async () => {
   let res: any = {};
-  btn.innerText = "Saving...";
-  btn.classList.add("btn--hidden");
-  res = store.changes && (await postData(`${URL}&save=true`, store.changes));
-  btn.innerText = "Data was saved ✅";
-  if (res.error) {
-    btn.innerText = "Data was NOT saved ❌";
-    setTimeout(() => {
-      btn.innerText = "Save";
-      btn.classList.remove("btn--hidden");
-    }, 3000);
+  res =
+    store.payload &&
+    (await postData(`${URL}&save=true`, { payload: store.payload }));
+
+  const { locked } = res;
+  if (locked === undefined) {
+    return renderModal("Data was not saved<br />Server error", "error");
+  }
+
+  handleLocked(locked);
+  if (locked === false) {
+    renderModal("Data was saved", "success");
   }
 };
 
-export async function onExportTableToCSVButtonClick(fileName:string){
-  
-const csv = store?.csv?.map(row =>
-  row.map(cell => saveValue(cell)).join(",")
-).join("\n") || "";
-downloadCSV(csv, fileName);
+export function handleInput() {
+  const table = document.getElementById("data-table");
+  table?.addEventListener("input", (e) => {
+    const target = e.target as HTMLInputElement;
+    if (
+      target &&
+      (target.classList.contains("calories") ||
+        target.classList.contains("heart-rate"))
+    ) {
+      target.value = sanitizeInputLive(target.value);
+    }
+
+    const rows = table.querySelectorAll("tbody tr");
+    rows.forEach((row) => {
+      const reps = parseInt(row.children[2].textContent || "0", 10);
+      const calories = parseDecimal(
+        (row.querySelector(".calories") as HTMLInputElement)?.value || "0",
+      );
+      const heartRate = parseDecimal(
+        (row.querySelector(".heart-rate") as HTMLInputElement)?.value || "0",
+      );
+      const resultCell = row.querySelector(".result");
+      if (resultCell) {
+        resultCell.textContent = formatDecimal(reps + calories + heartRate);
+      }
+    });
+
+    updatePayload();
+  });
 }
 
-const downloadCSV = (csvContent:string, filename:string) => {
-  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
-  const link = document.createElement("a");
-
-  link.href = window.URL.createObjectURL(blob);
-  link.download = filename;
-  link.style.display = "none";
-
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
-
-function saveValue(input: unknown): string {
-  const str = String(input);
-  return `"${str.replace(/"/g, '""')}"`;
+export async function handleSave() {
+  document.getElementById("save-btn")?.addEventListener("click", async () => {
+    updatePayload();
+    await onSave();
+  });
 }
-
