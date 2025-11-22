@@ -41,8 +41,8 @@ export function renderTable(data: ExerciseEntry[]): string {
                 <td>${entry.reps}</td>
                 <td>${entry.duration_min}</td>
                 <td>${entry.achievement}</td>
-                <td><input type="text" value="${formatDecimal(entry.calories_burned)}" class="calories" /></td>
-                <td><input type="text" value="${formatDecimal(entry.heart_rate_avg)}" class="heart-rate" /></td>
+                <td><input type="text" value="${formatDecimal(entry.calories_burned)}" /></td>
+                <td><input type="text" value="${formatDecimal(entry.heart_rate_avg)}"  /></td>
                 <td class="result">${formatDecimal(entry.reps + entry.calories_burned + entry.heart_rate_avg)}</td>
               </tr>
             `;
