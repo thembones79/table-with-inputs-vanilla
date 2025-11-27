@@ -28,18 +28,13 @@ app.get("/gl", (req, res) => {
     locked,
     decimal,
   };
-  if (req.query.get) {
-    req.query.get === "perm"
-      ? handlePermissions(req, res)
-      : res.status(STATUS).json(response);
-  }
+  res.status(STATUS).json(response);
 });
 app.post("/gl", multer().none(), (req, res) => {
   const content = req.body.json;
   try {
     console.log(JSON.parse(content).payload);
     payload = JSON.parse(content).payload;
-    // fs.writeFileSync("./mock/changes.json", content);
   } catch (error) {
     console.error(error);
   }
@@ -49,36 +44,6 @@ app.post("/gl", multer().none(), (req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port: ${port}`);
 });
-
-const handlePermissions = (req, res) => {
-  if (!req.query.user) return res.json({ canEdit: false, editor: null });
-
-  const valid = JSON.parse(fs.readFileSync("./mock/perm.json", "utf-8"));
-
-  const { user } = req.query;
-  const timestamp = Date.now();
-
-  const requesting = {
-    user,
-    timestamp,
-  };
-
-  if (requesting.timestamp - valid.timestamp < 10000) {
-    if (requesting.user !== valid.user)
-      return res.json({ canEdit: false, editor: valid.user });
-  }
-
-  try {
-    fs.writeFileSync("./mock/perm.json", JSON.stringify(requesting));
-  } catch (error) {
-    console.error(error);
-  }
-  res.json({
-    canEdit: true,
-    editor: requesting.user,
-    message: "Turlaj pyzy Kmieciu!!!",
-  });
-};
 
 function applyPayloadToData(data, payloadString) {
   if (!payloadString) return data;
@@ -91,7 +56,7 @@ function applyPayloadToData(data, payloadString) {
 
   if (rows.length !== data.length) {
     throw new Error(
-      "Liczba wierszy w payloadzie nie zgadza się z długością danych"
+      "Liczba wierszy w payloadzie nie zgadza się z długością danych",
     );
   }
 
