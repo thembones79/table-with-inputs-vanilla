@@ -1,7 +1,5 @@
 <html lang="en">
   <head>
-    <script type="module" src="/@vite/client"></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GL Analyzer</title>
@@ -41,7 +39,6 @@
         background-color: #fff;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         border-radius: 6px;
-        overflow: hidden;
       }
 
       thead {
@@ -78,6 +75,30 @@
         font-weight: bold;
         color: #009999;
       }
+      .table-container {
+        max-height: calc(100dvh - 150px);
+        overflow-y: auto; /* przewijanie pionowe */
+        border: 1px solid #ccc;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th {
+        position: sticky;
+        top: 0; /* przyklejenie do górnej krawędzi kontenera */
+        background: #f0f0f0; /* tło nagłówka */
+        z-index: 2; /* upewnia się, że nagłówek jest nad treścią */
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+
+      td {
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
     </style>
   </head>
   <body>
@@ -85,12 +106,15 @@
       <img src="./src/customer.svg" alt="SIEMENS" />
     </div>
 
-    <div id="the-app">
+    <div id="the-app" class="table-container">
       <table id="data-table" border="1" cellpadding="5" cellspacing="0">
         <thead>
           <tr>
             <th>Date</th>
-            <th>Exercise</th>
+            <th>
+              <p>Exercise</p>
+              <input type=" />" name="" value="" />
+            </th>
             <th>Reps</th>
             <th>Duration (min)</th>
             <th>Achievement</th>
@@ -212,5 +236,14 @@
         </tbody>
       </table>
     </div>
+    <script>
+      const rows = document.querySelectorAll("tr");
+
+      rows.forEach((r) => {
+        for (let i = 0; i < r.children.length; i++) {
+          r.children[i].classList.add("col" + i);
+        }
+      });
+    </script>
   </body>
 </html>
