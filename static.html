@@ -33,6 +33,19 @@
         color: #009999;
       }
 
+      th {
+        position: sticky;
+        top: 0;
+        background: #f0f0f0;
+        z-index: 2;
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+
+      tr:has(td.filtered-out) {
+        display: none;
+      }
+
       table {
         width: 100%;
         border-collapse: collapse;
@@ -47,8 +60,9 @@
 
       th,
       td {
-        padding: 12px 16px;
         text-align: left;
+        padding: 8px;
+        border: 1px solid #ccc;
         border-bottom: 1px solid #ddd;
       }
 
@@ -75,28 +89,10 @@
         font-weight: bold;
         color: #009999;
       }
+
       .table-container {
         max-height: calc(100dvh - 150px);
-        overflow-y: auto; /* przewijanie pionowe */
-        border: 1px solid #ccc;
-      }
-
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-
-      th {
-        position: sticky;
-        top: 0; /* przyklejenie do górnej krawędzi kontenera */
-        background: #f0f0f0; /* tło nagłówka */
-        z-index: 2; /* upewnia się, że nagłówek jest nad treścią */
-        padding: 8px;
-        border: 1px solid #ccc;
-      }
-
-      td {
-        padding: 8px;
+        overflow-y: auto;
         border: 1px solid #ccc;
       }
     </style>
@@ -111,10 +107,7 @@
         <thead>
           <tr>
             <th>Date</th>
-            <th>
-              <p>Exercise</p>
-              <input type=" />" name="" value="" />
-            </th>
+            <th>Exercise</th>
             <th>Reps</th>
             <th>Duration (min)</th>
             <th>Achievement</th>
@@ -124,7 +117,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr data-index="0">
+          <tr>
             <td>2025-11-01</td>
             <td>Push-ups</td>
             <td>30</td>
@@ -135,7 +128,7 @@
             <td class="result">30</td>
           </tr>
 
-          <tr data-index="1">
+          <tr>
             <td>2025-11-02</td>
             <td>Squats</td>
             <td>50</td>
@@ -146,7 +139,7 @@
             <td class="result">50</td>
           </tr>
 
-          <tr data-index="2">
+          <tr>
             <td>2025-11-03</td>
             <td>Plank</td>
             <td>1</td>
@@ -157,7 +150,7 @@
             <td class="result">1</td>
           </tr>
 
-          <tr data-index="3">
+          <tr>
             <td>2025-11-04</td>
             <td>Jumping Jacks</td>
             <td>100</td>
@@ -168,7 +161,7 @@
             <td class="result">100</td>
           </tr>
 
-          <tr data-index="4">
+          <tr>
             <td>2025-11-05</td>
             <td>Burpees</td>
             <td>20</td>
@@ -179,7 +172,7 @@
             <td class="result">20</td>
           </tr>
 
-          <tr data-index="5">
+          <tr>
             <td>2025-11-06</td>
             <td>Lunges</td>
             <td>40</td>
@@ -190,7 +183,7 @@
             <td class="result">40</td>
           </tr>
 
-          <tr data-index="6">
+          <tr>
             <td>2025-11-07</td>
             <td>Sit-ups</td>
             <td>60</td>
@@ -201,7 +194,7 @@
             <td class="result">60</td>
           </tr>
 
-          <tr data-index="7">
+          <tr>
             <td>2025-11-08</td>
             <td>Mountain Climbers</td>
             <td>80</td>
@@ -212,7 +205,7 @@
             <td class="result">80</td>
           </tr>
 
-          <tr data-index="8">
+          <tr>
             <td>2025-11-09</td>
             <td>High Knees</td>
             <td>90</td>
@@ -223,7 +216,7 @@
             <td class="result">90</td>
           </tr>
 
-          <tr data-index="9">
+          <tr>
             <td>2025-11-10</td>
             <td>Push-ups</td>
             <td>40</td>
@@ -239,10 +232,31 @@
     <script>
       const rows = document.querySelectorAll("tr");
 
-      rows.forEach((r) => {
+      rows.forEach((r, idx) => {
         for (let i = 0; i < r.children.length; i++) {
           r.children[i].classList.add("col" + i);
+
+          if (idx === 0) {
+            const txt = r.children[i].textContent;
+            r.children[i].innerHTML = `<p>${txt}</p><input type="search" />`;
+          }
         }
+      });
+
+      const table = document.querySelector("table");
+      table.addEventListener("input", (e) => {
+        const colClass = e.target.parentElement.classList.value;
+        const inputValue = e.target.value.toLowerCase();
+        const cells = document.querySelectorAll(`td.${colClass}`);
+        console.log({ colClass, inputValue, cells });
+
+        cells.forEach((c) => {
+          if (c.textContent.toLowerCase().startsWith(inputValue)) {
+            c.classList.remove("filtered-out");
+          } else {
+            c.classList.add("filtered-out");
+          }
+        });
       });
     </script>
   </body>
