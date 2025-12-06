@@ -248,7 +248,6 @@
         const colClass = e.target.parentElement.classList.value;
         const inputValue = e.target.value.toLowerCase();
         const cells = document.querySelectorAll(`td.${colClass}`);
-        console.log({ colClass, inputValue, cells });
 
         cells.forEach((c) => {
           if (c.textContent.toLowerCase().startsWith(inputValue)) {
